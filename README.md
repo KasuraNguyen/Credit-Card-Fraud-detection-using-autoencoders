@@ -134,8 +134,6 @@ Mạng đơn giản, chỉ 855 tham số:
 - Autoencoder chỉ học từ giao dịch bình thường của tập train.
 - Cả hai ngưỡng đều được chọn trên validation, **không bao giờ dùng tập test** để chọn ngưỡng hay tinh chỉnh.
 
-![Sơ đồ phương pháp A](so_do_autoencoder.png)
-![Sơ đồ phương pháp B](so_do_autoencoder_xgboost.png)
 
 ---
 
@@ -149,8 +147,6 @@ Mạng đơn giản, chỉ 855 tham số:
 | **B** — Autoencoder + XGBoost | **≈ 0,87** | ≈ 0,72 | **≈ 0,79** | **0,815** |
 
 > Precision, Recall và F1 được đọc từ biểu đồ so sánh nên làm tròn khoảng 2 chữ số; PR-AUC lấy trực tiếp từ chú thích của đường Precision–Recall. Con số chính xác nằm trong output của notebook (cell *So sánh kết quả thực nghiệm*).
-
-![So sánh hai phương pháp](so_sanh_hai_phuong_phap.png)
 
 ### Nhận xét
 
@@ -183,10 +179,6 @@ Chỉ số bị ảnh hưởng nhiều nhất là **Recall**: do tập test ch�
 
 ### 1. Clone repo
 
-```bash
-git clone https://github.com/<ten-ban>/<ten-repo>.git
-cd <ten-repo>
-```
 
 ### 2. Tạo môi trường và cài thư viện
 
@@ -227,16 +219,17 @@ Chọn **Kernel → Restart & Run All**. Quá trình huấn luyện nhanh (mỗi
 
 ```text
 .
-├── CreditCardFraud_Autoencoder_Seminar_commented.ipynb   # Notebook chính (có chú thích tiếng Việt)
-├── README.md                                             # Tài liệu này
-├── requirements.txt                                      # Danh sách thư viện
-├── .gitignore
-├── so_do_autoencoder.png                                 # Sơ đồ phương pháp A (notebook tự sinh)
-├── so_do_autoencoder_xgboost.png                         # Sơ đồ phương pháp B (notebook tự sinh)
-├── so_sanh_hai_phuong_phap.png                           # Biểu đồ so sánh (notebook tự sinh)
-└── creditcard.csv                                        # Dữ liệu (tải từ Kaggle)
+├── notebook/
+│   ├── CreditCardFraud_Autoencoder_Seminar_commented.ipynb
+│   ├── so_do_autoencoder.png
+│   ├── so_do_autoencoder_xgboost.png
+│   └── so_sanh_hai_phuong_phap.png
+├── data/
+│   └── dataset_link.txt
+├── README.md
+├── requirements.txt
+└── .gitignore
 ```
-
 ---
 
 ## ⚠️ Hạn chế
