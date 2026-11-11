@@ -1,0 +1,46 @@
+# ===== Dữ liệu (quá lớn cho GitHub: creditcard.csv ~150 MB > giới hạn 100 MB) =====
+# Tải từ: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+creditcard.csv
+creditcardfraud.zip
+data/
+*.csv
+*.zip
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.cache/
+
+# ===== Môi trường ảo =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== Mô hình / checkpoint huấn luyện (nếu sau này bạn lưu) =====
+*.h5
+*.keras
+*.pkl
+*.joblib
+*.ubj
+saved_model/
+checkpoints/
+logs/
+tensorboard_logs/
+
+# ===== IDE / Hệ điều hành =====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Biến môi trường / khóa bí mật =====
+.env
+kaggle.json

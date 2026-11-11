@@ -1,0 +1,9 @@
+# Khuyến nghị Python 3.10 - 3.12 (TensorFlow chưa hỗ trợ mọi phiên bản Python mới nhất)
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+tensorflow
+xgboost
+notebook
